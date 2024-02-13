@@ -7,8 +7,9 @@
 	</listeners>
 	
     <suite-files>
-		<suite-file path="LoginLogoutFlow.xml"/>
+		
         <suite-file path="LoginLogoutFlow.xml"/>
+        <suite-file path="General_Hotel_Booking_Flow.xml"/>
         <suite-file path="Editing_Search_Page_only.xml"/>
         <suite-file path="Editing_on_Hotel_page.xml"/>
         <suite-file path="Edit_InSearch_and_hotelPage.xml"/>
