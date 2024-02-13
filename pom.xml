@@ -188,16 +188,39 @@
 
 				<!--This is forgoal  -->
 				<!-- Maven Surefire Plugin Configuration -->
-				<plugin>
+				<!--<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>3.2.5</version>
+					<version>3.2.5</version>  Use the latest version
+					available 
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>resourcesF/master.xml</suiteXmlFile>
+							<suiteXmlFile>resourcesF/Master.xml</suiteXmlFile>
 						</suiteXmlFiles>
+						<properties>
+							<property>
+								<name>usedefaultlisteners</name>
+								<value>false</value>
+							</property>
+							<plugin>
+								<artifactId>maven-jar-plugin</artifactId>
+								<version>3.0.2</version>
+							</plugin>
+							<property>
+								<name>suiteXmlFiles</name>
+								<value>resourcesF/Master.xml</value>
+							</property>
+						</properties>
 					</configuration>
-				</plugin>
+					<dependencies>
+						<dependency>
+							<groupId>org.testng</groupId>
+							<artifactId>testng</artifactId>
+							<version>7.8.0</version>  Use the latest version
+							available 
+						</dependency>
+					</dependencies>
+				</plugin>-->
 			</plugins>
 		</pluginManagement>
 	</build>
