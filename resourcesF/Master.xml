@@ -8,14 +8,18 @@
 	
     <suite-files>
 		
-        <suite-file path="LoginLogoutFlow.xml"/>
-        <suite-file path="General_Hotel_Booking_Flow.xml"/>
-        <suite-file path="Editing_Search_Page_only.xml"/>
-        <suite-file path="Editing_on_Hotel_page.xml"/>
-        <suite-file path="Edit_InSearch_and_hotelPage.xml"/>
-        <suite-file path="Editing_SearchPage_by_Apply_Filter.xml"/>
-        <suite-file path="ResentViewHotels.xml"/>
-        <suite-file path="CarFlow.xml"/>
+       <test name="Validate by Login and Logout">
+        <classes>
+			<class name="com.traval.qa.test.LoginLogoutTest"></class>
+			<class name="com.traval.qa.test.NormalHotelBookingTest"></class>
+			<class name="com.traval.qa.test.EditInSearchPageTest"></class>
+			<class name="com.traval.qa.test.EditInHotelPageTest"></class>
+			<class name="com.traval.qa.test.SearchAndHotelpageEditTest"></class>
+			<class name="com.traval.qa.test.ApplyFilterTest"></class>
+			<class name="com.traval.qa.test.ResentViewHotelTest"></class>
+			<class name="com.traval.qa.test.SearchCarTest"></class>
+		</classes>
+       </test> 
         
     </suite-files>
 </suite> 
