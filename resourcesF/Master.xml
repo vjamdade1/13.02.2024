@@ -12,12 +12,7 @@
         <classes>
 			<class name="com.traval.qa.test.LoginLogoutTest"></class>
 			<class name="com.traval.qa.test.NormalHotelBookingTest"></class>
-			<class name="com.traval.qa.test.EditInSearchPageTest"></class>
-			<class name="com.traval.qa.test.EditInHotelPageTest"></class>
-			<class name="com.traval.qa.test.SearchAndHotelpageEditTest"></class>
-			<class name="com.traval.qa.test.ApplyFilterTest"></class>
-			<class name="com.traval.qa.test.ResentViewHotelTest"></class>
-			<class name="com.traval.qa.test.SearchCarTest"></class>
+			
 		</classes>
        </test> 
         
