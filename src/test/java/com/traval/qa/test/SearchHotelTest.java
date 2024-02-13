@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.traval.qa.base.TestBaseGD;
 import com.traval.qa.confiq.ConfigureProperties;
 import com.traval.qa.pages.SearchHotels;
-@Test
+
 public class SearchHotelTest extends TestBaseGD
 {
 	public SearchHotels searchhotels;
@@ -22,7 +22,7 @@ public class SearchHotelTest extends TestBaseGD
 	}
 
 //To open the browser and URL
-	@BeforeClass
+	
 	public void setup() throws Exception 
 	{
 
@@ -31,7 +31,7 @@ public class SearchHotelTest extends TestBaseGD
 	}
 
 //To verify the Title and Accept Policy
-	@Test(priority = 1)
+	
 	public void Validate_HomePage_Title() throws Exception {
 
 		String Title = searchhotels.ValidateHomeTitle();
@@ -42,7 +42,7 @@ public class SearchHotelTest extends TestBaseGD
 	}
 
 //To validate by adding requirement and store the entered details
-	@Test(priority = 2)
+	
 	public void ValidataBy_AddingRequirment_InHomePage() throws Exception {
 		implicitewait();
 		searchhotels.AddingRequirment(ConfigureProperties.Location);
@@ -54,7 +54,7 @@ public class SearchHotelTest extends TestBaseGD
 
 //This is created to load listing page
 	// This is to verify the HomePage Details and Search Page Details
-	@Test(priority = 3)
+
 	public void Validateby_Requirments_Matchingin_ListingPage_FromHomePage() throws Exception {
 		implicitewait();
 		searchhotels.StoreListingPagesDetails();
@@ -72,7 +72,7 @@ public class SearchHotelTest extends TestBaseGD
 	}
 
 //To verify and Edit the details in Listing Page
-	@Test(priority = 4)
+
 	public void Edit_Requirments_InListingPage() throws Exception {
 		implicitewait();
 		searchhotels.StoreListingPagesDetails();
@@ -99,7 +99,7 @@ public class SearchHotelTest extends TestBaseGD
 		searchhotels.ClickOnResultHotel();
 	}
 //To verify by apply filter in edit listing page
-	@Test(priority = 5)
+	
 	public void verify_Multiple_Filter_ListingPage() throws Exception 
 	{
 //Verify Price filter 
@@ -191,7 +191,7 @@ public class SearchHotelTest extends TestBaseGD
 	
 
 // This is to verify requirement match SearchPage Details and Hotel Page Details or not in book page
-	@Test(priority = 7)
+
 	public void Validate_Hotelpage_bycheckingrequirment_FromListingPage() throws Exception
 	{
 		implicitewait();
@@ -231,7 +231,7 @@ public class SearchHotelTest extends TestBaseGD
 	}
 
 //This is to verify by Hotel page the details from Home page and Edit IN Hotel Page
-	@Test(priority = 9)
+	
 	public void Edit_the_HotelPage_Details_byMatchingDetails_withHomePage() throws Exception
 
 	{
@@ -256,7 +256,7 @@ public class SearchHotelTest extends TestBaseGD
 	}
 
 //This is to verify By Hotel Page details from Listing page and Edit in Hotel Page
-	@Test(priority = 10)
+	
 	public void Edit_the_HotelPage_Details_byMatchingDetails_withListingPage() throws Exception
 	{
 		implicitewait();
@@ -280,7 +280,7 @@ public class SearchHotelTest extends TestBaseGD
 
 	// This is to verify by Hotel page details from Edited Listing page and Edit IN
 	// Hotel Page
-	@Test(priority = 11)
+	
 	public void Edit_the_Hotel_Details_ByMatchingDetails_with_EditedListingPage() throws Exception
 	{
 		implicitewait();
@@ -307,7 +307,7 @@ public class SearchHotelTest extends TestBaseGD
 
 // Checkout page
 	//Validate by requirements come from home page
-	@Test(priority = 12)
+	
 	public void Validate_CheckoutPagerequirment_From_HomePage() throws Exception {
 		implicitewait();
 		//searchhotels.ifRateIsChange();
@@ -322,7 +322,7 @@ public class SearchHotelTest extends TestBaseGD
 		searchhotels.FinalBookingClick();
 	}
 	//Validate by requirements come from Edited listing page
-	@Test(priority = 13)
+	
 	public void Validate_CheckoutPagerequirment_From_EditedLisngPage() throws Exception {
 		implicitewait();
 		searchhotels.DetailsRequirmentInCheckoutPage();
@@ -337,7 +337,7 @@ public class SearchHotelTest extends TestBaseGD
 	}
 	
 	//Validate by requirements come from Edited listing page
-	@Test(priority = 14)
+	
 	public void Validate_CheckoutPagerequirment_From_EditedHotelPage() throws Exception {
 		implicitewait();
 		searchhotels.DetailsRequirmentInCheckoutPage();
@@ -353,7 +353,7 @@ public class SearchHotelTest extends TestBaseGD
 	
 
 	// This is to verify the successful Massage
-	@Test(priority = 15)
+	
 	public void SucessFul_MassageConfirmation() 
 	{
 		implicitewait();
