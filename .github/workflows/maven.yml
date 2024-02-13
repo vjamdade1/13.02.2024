@@ -30,6 +30,6 @@ jobs:
     - name: Build and run tests
       run: |
         mvn clean test -Dtest=NormalHotelBookingTest.java
-      working-directory: 13.02.2024/src/test/java/com/traval/qa/test
+      working-directory: .
 
   
