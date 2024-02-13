@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Login and SignOut Flow">
+
+	<listeners>
+		<listener class-name="Extendreportlistener.ExtentReporterNG" />
+	</listeners>
+	<test name="Validate by Login and Logout">
+		<classes>
+			<class name="com.traval.qa.test.LoginLogoutTest">
+			</class>
+		</classes>
+	</test>
+</suite>

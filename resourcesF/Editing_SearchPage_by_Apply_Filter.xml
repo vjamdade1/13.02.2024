@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Edit on Search Page and Apply Multiple Filter">
+
+	<listeners>
+		<listener class-name="Extendreportlistener.ExtentReporterNG" />
+	</listeners>
+	<test name="Apply Multiple Filter in search Page">
+		<classes>
+			<class name="com.traval.qa.test.ApplyFilterTest"></class>
+		</classes>
+	</test>
+</suite>

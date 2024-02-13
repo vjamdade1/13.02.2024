@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Hotel Booking General Flow  Flow">
+	<listeners>
+		<listener class-name="Extendreportlistener.ExtentReporterNG" />
+	</listeners>
+	<test name="Validate the Hotel Booking Flow">
+		<classes>
+			<class name="com.traval.qa.test.NormalHotelBookingTest">
+			</class>
+		</classes>
+	</test>
+</suite>

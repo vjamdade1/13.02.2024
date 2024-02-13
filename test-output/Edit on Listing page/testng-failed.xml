@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Edit on Listing page]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Extendreportlistener.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="first Test for Ticket(failed)">
+    <classes>
+      <class name="com.traval.qa.test.SearchCarTest">
+        <methods>
+          <include name="Matching_Requirment_inListingPage_With_HomePageCar"/>
+          <include name="Matching_Requirment_InCheckoutPage_With_HomePageCar"/>
+          <include name="CloseBrowser"/>
+          <include name="Matching_SucessFul_Massage"/>
+          <include name="adding_Car_Requirment_In_HomePage"/>
+          <include name="setup1"/>
+        </methods>
+      </class> <!-- com.traval.qa.test.SearchCarTest -->
+    </classes>
+  </test> <!-- first Test for Ticket(failed) -->
+</suite> <!-- Failed suite [Edit on Listing page] -->

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Edit on Listing page">
+
+	<listeners>
+		<listener class-name="Extendreportlistener.ExtentReporterNG" />
+	</listeners>
+	<test name="first Test for Ticket">
+		<classes>
+			<class name="com.traval.qa.test.SearchHotelTest">
+				<methods>
+					<include name="setup"></include>
+					<!--1. This is for Validate Home Page And URL-->
+					<include name="Validate_HomePage_Title"></include>
+					
+					<!-- 2.This is for Adding Requirment in home page-->
+					<include name="ValidataBy_AddingRequirment_InHomePage"></include>
+					
+					<!-- 3.This is for validating Requirment in Listing page-->
+					<exclude name="Validateby_Requirments_Matchingin_ListingPage_FromHomePage"></exclude>
+					
+					<!--4. This is for Edit Requirment in Listing  page-->
+					<exclude name="Edit_Requirments_InListingPage"></exclude>
+					
+					<!--5 this is for verify the filter in listing page -->
+					<include name="verify_Multiple_Filter_ListingPage"></include>
+					 
+					<!--6. This is for Validate Requirment in Hotel page to Home page -->
+					<exclude name="Validate_Hotelpage_bycheckingrequirment_FromHomePage"></exclude>
+					
+					<!-- 7.This is for Validate Requirment in Hotel page to Listing page -->
+					<exclude name="Validate_Hotelpage_bycheckingrequirment_FromListingPage"></exclude>
+					
+					<!-- 8.This is for Validate Requirment in Hotel page to Edited Listing page -->
+					<exclude name="Validate_Hotelpageby_checkingrequirment_From_EditedListingPage"></exclude>
+					
+					<!-- 9.This is for Edit Requirment in Hotel page by matching with Home Page  -->
+					<exclude name="Edit_the_HotelPage_Details_byMatchingDetails_withHomePage"></exclude>
+					
+					<!-- 10.This is for Edit Requirment in Hotel page by matching with listing page  -->
+					<exclude name="Edit_the_HotelPage_Details_byMatchingDetails_withListingPage"></exclude>
+					
+					
+					<!-- 11.This is for Edit Requirment in Hotel page by by matching edited listing page  -->
+					<exclude name="Edit_the_Hotel_Details_ByMatchingDetails_with_EditedListingPage"></exclude>
+					
+					<!-- 12.This is for Checkout Page match with home page  -->
+					<exclude name="Validate_CheckoutPagerequirment_From_HomePage"></exclude>
+					
+					<!-- 13.This is for Checkout Page match with Edited listing page  -->
+					<exclude name="Validate_CheckoutPagerequirment_From_EditedLisngPage"></exclude>
+					
+					<!-- 14.This is for Checkout Page match with Edited hotel page  -->
+					<exclude name="Validate_CheckoutPagerequirment_From_EditedHotelPage"></exclude>
+					
+					<!-- 15.This is for Checkout Page  -->
+					<exclude name="SucessFul_MassageConfirmation"></exclude>				
+				</methods>						
+			</class>
+		</classes>
+	</test>
+</suite>

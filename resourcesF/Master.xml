@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="GoDo.com ">
+	<listeners>
+		<listener class-name="Extendreportlistener.ExtentReporterNG" />
+	</listeners>
+	
+    <suite-files>
+		<suite-file path="LoginLogoutFlow.xml"/>
+        <suite-file path="LoginLogoutFlow.xml"/>
+        <suite-file path="Editing_Search_Page_only.xml"/>
+        <suite-file path="Editing_on_Hotel_page.xml"/>
+        <suite-file path="Edit_InSearch_and_hotelPage.xml"/>
+        <suite-file path="Editing_SearchPage_by_Apply_Filter.xml"/>
+        <suite-file path="ResentViewHotels.xml"/>
+        <suite-file path="CarFlow.xml"/>
+        
+    </suite-files>
+</suite> 
